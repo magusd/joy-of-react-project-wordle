@@ -230,3 +230,54 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+/*Stretch goals*/
+
+.reset {
+  display: flex;
+  justify-content: center;
+  margin-top: .25em;
+}
+
+.reset button {
+  background-color: gray;
+  color: white;
+  border: solid 1px gray;
+  padding: .5em;
+}
+
+.keyboard{
+}
+
+.keyboard-row{
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  min-width: 10%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid var(--color-gray-700);
+  border-radius: var(--radius);
+  font-size: 2rem;
+  margin: 0 0 2px 2px;
+  
+}
+
+.key.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.key.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.key.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
